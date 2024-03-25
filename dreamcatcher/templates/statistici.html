@@ -1,0 +1,21 @@
+{% extends "./base.html" %}
+
+{% load static %}
+{% block title %}Charts{% endblock %}
+
+{% block content %}
+<section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+       <h1 class="h1 fw-bold"><span style="color: red;">D</span><span style="color: white;">REAM</span><span style="color: red;">C</span><span style="color: white;">ATCHER</span></h1>
+        <p class="lead text-muted" style="color: white;">Vizualizati statisticile! </p>
+
+         <a href="{% url 'dreamcatcher:statistici_view_stres' %}" class="btn btn-primary my-2" style="background-color: red;">Statistici dupa nivelul de stres</a>
+         <a href="{% url 'dreamcatcher:statistici_view_energie' %}" class="btn btn-primary my-2" style="background-color: red;">Statistici dupa nivelul de energie</a>
+         <a href="{% url 'dreamcatcher:statistici_view_durata' %}" class="btn btn-primary my-2" style="background-color: red;">Statistici dupa durata somnului</a>
+         <a href="{% url 'dreamcatcher:descriere_categorie' %}" class="btn btn-primary my-2" style="background-color: green;">Revenire la pagina principala</a>
+
+      </div>
+    </div>
+</section>
+{% endblock %}
